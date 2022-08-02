@@ -7,10 +7,57 @@
 body {
     font-family: "Roboto", sans-serif;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel {
+    height: 530px;
+    width: 500px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    color: #fff;
+    width: 49.5%;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: rebeccapurple;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
 }
